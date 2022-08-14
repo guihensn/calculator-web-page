@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+body{
+    font-family: Inter;
+   
+    height: 100vh;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #022f40fe;
+}
+
+@media screen and (orientation: landscape) and (max-width: 420px),
+       screen and (orientation: landscape) and (max-height: 280px){
+    body{
+        font-size: 15px;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-height: 420px),
+       screen and (orientation: portrait) and (max-width: 280px){
+    body{
+        font-size: 15px;
+    }
+}
